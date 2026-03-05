@@ -12,6 +12,11 @@ result = mg.use("distilgpt2", "T4", input="Hello world", max_new_tokens=50)
 
 ## 권장 사용법
 
+### LangChain에서 사용시
+```python
+pip install langchain-modal-gpu-ez
+```
+
 ### 1단계: 환경 설정
 
 `.env` 파일에 토큰을 설정한다. 이후 모든 호출에서 자동으로 로드된다.
