@@ -1,0 +1,38 @@
+[build-system]
+requires = ["setuptools>=75.0.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "modal-gpu-ez"
+version = "1.0.0"
+description = "Modal 서버리스 GPU + HuggingFace 모델을 원라이너로 사용하는 Python 라이브러리"
+readme = "README.md"
+license = "Apache-2.0"
+requires-python = ">=3.12"
+authors = [
+    {name = "modal-gpu-ez contributors"}
+]
+dependencies = [
+    "modal>=1.0.0",
+    "huggingface-hub>=1.0.0",
+    "python-dotenv>=1.0.0",
+    "torch>=2.0.0",
+    "transformers>=4.40.0",
+    "safetensors>=0.4.0",
+]
+
+[project.optional-dependencies]
+embedding = ["sentence-transformers>=3.0.0"]
+image = ["diffusers>=0.30.0", "accelerate>=0.30.0"]
+translation = ["sentencepiece>=0.2.0"]
+audio = ["soundfile>=0.12.0"]
+all = [
+    "sentence-transformers>=3.0.0",
+    "diffusers>=0.30.0",
+    "accelerate>=0.30.0",
+    "sentencepiece>=0.2.0",
+    "soundfile>=0.12.0",
+]
+
+[tool.setuptools.packages.find]
+include = ["modal_gpu_ez*"]

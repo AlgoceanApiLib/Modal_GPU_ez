@@ -1,0 +1,49 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.egg-info/
+dist/
+build/
+*.egg
+
+# Virtual Environment
+venv/
+.venv/
+env/
+
+# Environment Variables
+.env
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Modal
+modal_models/
+
+# 내부 DB
+.modal_gpu_ez/
+
+# 로컬 모델 캐시
+Models/
+
+# Test
+test*.py
+
+# Test outputs
+*.png
+*.wav
+*.mp3
+
+# Distribution
+*.tar.gz
+*.whl
